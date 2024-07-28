@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    overflow: hidden;
+    border-bottom: 1px none #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 100px;
+}
+
+header .logo {
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 10px;
+
+}
+
+nav {
+    margin-left: 20px;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+nav ul li a:hover{
+    color: #fda000f4; 
+}
+
+.right_icons img {
+    width: 40px;
+}
+
+.right_icons {
+    float: right;
+}
+
+.right_icons div {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.right_icons .icon {
+    padding-right: 20px;
+}
+.right_icons .icon:hover {
+    color: #c45a04; /* Added hover effect */
+}
+section .imges {
+    float: left;
+
+}
+
+.imges .imag {
+    width: 380px;
+    margin-left: 130px;
+    margin-top: 79px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imges .thumbnails img {
+    width: 80px;
+    border-radius: 15px;
+    padding: 8px;
+
+}
+.imges .thumbnails img:hover {
+    transform: scale(1.1);
+    border: 1px solid #ff7300;
+    padding: 5px;
+    opacity: 0.8;
+}
+.imges .thumbnails {
+
+    margin-left: 120px;
+}
+
+.text {
+    float: right;
+    width: 450px;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+
+.section1 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.brand-name{
+    color: #fda000f4; 
+    font-size: 12px;
+    font-weight: bold;
+}
+.text h1{
+    font-size: 40px;
+}
+.current-price {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.discount {
+    color: #ff7300;
+    font-weight: bold;
+    margin-left: 10px;
+    background-color: #fae6c3;
+    padding: 3px;
+    font-size: small;
+    border-radius: 3px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #000000;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.quantity-btn {
+    padding: 10px 20px;
+    border: 1px none #ccc;
+    background-color: #eae9e9;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: medium;
+}
+
+.add-to-cart-btn {
+    background-color: #ff9500;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 75px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #c45a04; /* Added hover effect */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1168px){
+    .imges .imag {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 160px;
+    }
+    .text {
+        width: 100%;
+        max-width: 550px;
+        margin-top: 20px;
+        margin-right: 150px;
+        text-align: center;
+    }
+    .imges .thumbnails  {
+        margin-left: 150px;
+    }
+    .imges .thumbnails img {
+    width: 110px;
+    border-radius: 15px;
+    padding: 8px;
+
+   }
+}
+@media (max-width: 768px) {
+    nav {
+        margin-left: 0px;
+    }
+    .nav {
+        padding: 10px 5px;
+    }
+    .right_icons .icon{
+        display: none;
+    }
+
+    nav ul li {
+        padding: 0px 5px;
+    }
+    nav ul{
+        padding: 5px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .imges .imag {
+        width: 100%;
+        max-width: 250px;
+        margin-left: 100px;
+    }
+    
+
+    .imges .thumbnails img {
+        width: 20%;
+        max-width: 50px;
+    }
+    .imges .thumbnails  {
+        margin-left: 90px;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+        margin-right: 150px;
+    }
+    
+
+    .text h1 {
+        font-size: 30px;
+    }
+    .text p {
+        font-size: 12px;
+    }
+    
+    .add-to-cart-btn {
+        padding: 10px 50px;
+    }
+    .quantity-btn{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 10px 5px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+
+        font-size: 12px;
+    }
+    nav ul{
+        padding: 0px 50px;
+    }
+    nav ul li{
+        display: block;
+    }
+    .imges .imag {
+        width: 100%;
+        max-width: 200px;
+        margin-left: 100px;
+    }
+
+    .imges .thumbnails img {
+        width: 10%;
+        width: 40px;
+    }
+    .imges .thumbnails  {
+        margin-left: 90px;
+    }
+
+    .text {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 15px;
+        margin-right: 50px;
+        text-align: left;
+    }
+
+    .text h1 {
+        font-size: 25px;
+    } 
+
+    .add-to-cart-btn {
+        padding: 10px 30px;
+    } 
+}
